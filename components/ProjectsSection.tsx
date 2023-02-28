@@ -6,24 +6,23 @@ import SlideUp from "./SlideUp";
 const projects = [
   {
     name: "방구석 평론가",
-    description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
+    description: "영화정보 제공 및 후기 공유를 위한 프로젝트.",
     image: "/moviecritic.png",
     github: "https://github.com/hqasmei/thankful-thoughts",
     link: "https://www.moviecritic.site/",
   },
   {
-    name: "북적북적",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
+    name: "북적북적 클론",
+    description: "모바일 앱 북적북적을 웹 사이트로 구현한 프로젝트.",
     image: "/bookbookclone.png",
     github: "https://github.com/hqasmei/platoio",
     link: "https://bookbookclone.vercel.app/",
   },
   {
-    name: "Kator Family Photos",
+    name: "WeRef",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
+      "공부한 내용과 참고할 레퍼런스 링크를 공유하는 커뮤니티 프로젝트.",
+    image: "/weref.png",
     github: "https://github.com/hqasmei/katorfamilyphotos",
     link: "https://katorfamilyphotos.com/",
   },
@@ -34,9 +33,9 @@ const ProjectsSection = () => {
     <section id="projects">
       <h1 className="text-center font-bold text-4xl">
         Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
+        <hr className="w-6 h-1 mx-auto my-4 bg-sky-500 border-0 rounded" />
       </h1>
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col space-y-28 mx-4">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
@@ -47,8 +46,8 @@ const ProjectsSection = () => {
                       <Image
                         src={project.image}
                         alt=""
-                        width={1000}
-                        height={1000}
+                        width={700}
+                        height={700}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
                     </Link>

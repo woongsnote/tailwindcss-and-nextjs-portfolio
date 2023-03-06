@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import SectionTitle from "./SectionTitle";
 import SlideUp from "./SlideUp";
 
 const projects = [
@@ -31,10 +32,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <h1 className="text-center font-bold text-4xl">
-        Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-sky-500 border-0 rounded" />
-      </h1>
+      <SectionTitle title="Projects" />
       <div className="flex flex-col space-y-28 mx-4">
         {projects.map((project, idx) => {
           return (
@@ -59,10 +57,16 @@ const ProjectsSection = () => {
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link href={project.github} target="_blank">
-                        <BsGithub size={30} className="" />
+                        <BsGithub
+                          size={32}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
                       </Link>
                       <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare size={30} className="" />
+                        <BsArrowUpRightSquare
+                          size={32}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
                       </Link>
                     </div>
                   </div>

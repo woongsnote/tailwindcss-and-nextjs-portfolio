@@ -13,7 +13,10 @@ const Footer = () => {
           © 2023 문지웅<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
+          <a
+            href="https://github.com/woongsnote"
+            rel="noreferrer"
+            target="_blank">
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
@@ -21,7 +24,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href="https://www.linkedin.com/in/woongsnote/"
             rel="noreferrer"
             target="_blank">
             <AiOutlineLinkedin
@@ -29,7 +32,7 @@ const Footer = () => {
               size={30}
             />
           </a>
-          <a
+          {/* <a
             href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
             rel="noreferrer"
             target="_blank">
@@ -37,7 +40,7 @@ const Footer = () => {
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

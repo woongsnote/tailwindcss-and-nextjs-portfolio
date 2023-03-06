@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section id="home">
       <div className="flex flex-col mx-auto text-center items-center justify-center my-10 py-16 sm:py-32 md:flex-row md:space-x-4 md:text-left md:py-52">
-        <div className="md:w-2/5 md:mt-2">
+        <div className="md:w-1/2 md:mt-2">
           <Image
             className="rounded-full shadow-2xl mx-8"
             src="/profile.jpg"
@@ -22,7 +22,7 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">Frontend Engineer</p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-sky-600 rounded-lg cursor-pointer"
             activeClass="active"
             spy={true}
             smooth={true}
